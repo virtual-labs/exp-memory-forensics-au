@@ -1,1 +1,1 @@
- <h2>Differentiating Blockchain Databases from Conventional Databases</h2>
+ <h2>Retrieving password hashes and dumping cached 	files from memory dumps.</h2>
