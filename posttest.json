@@ -1,0 +1,36 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What are Symbol tables?",
+      "answers": {
+        "a": "A table with mapping of addresses and human readable names",
+        "b": "A table with mapping of a JPG image file location address in the disk to memory address",
+        "c": "A table with mapping of MAC and it’s corresponding IP address"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Is it possible to extract every files present on a file system from a memory dump?",
+      "answers": {
+        "a": "yes",
+        "b": "no"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}
