@@ -1,28 +1,33 @@
 <u><h3> Procedure</h3></u>
 
-<p>To illustrate the procedural demonstration  between conventional databases and blockchain databases, we have designed a use case focused on product purchases. In this practical exercise, users engage by inputting their purchase specifics, including product name and pricing .After each transaction is concluded, users receive a transaction receipt. The critical aspect of this exercise lies in the concurrent recording of transaction histories in both conventional and blockchain databases.Through this procedure, users will gain a comprehensive understanding of the different  features and characteristics of conventional and blockchain databases. </p>
+<p><b>Step-1 Create a memory dump file :</b></p>
+<li>Click the “MemoryDump tool” button to generate a memorydump file.Copy the filename for Step 3.</li>
+<img src="images/step1.png" alt="step1"></div>
+<li>Copy the filename  highlighted in yellow color for Step 3.</li>
+<img src="images/step1.2.png" alt="step1"></div>
+<p><b>Step-2 Transfer memorydump file to an Analyst machine:</b></p>
+<li>
+To preserve integrity of the files on the victim's PC we transfer the memorydump file to an Analyst machine.</li>
+<img src="images/step2.png" alt="step2"></div>
 
-Click the add button to create a new item by providing the product name and price
+<p><b>Step-3 Locate the image file:</b></p>
+<li>We use the imageinfo plugin from the Volatility framework to look out for various Operating system related information. copy and paste  the filename  highlighted in yellow color from " Step-1:Create a Memory Dump File"</li>
+<img src="images/step3.1.png" alt="step2"></div>
+<li>Copy the OS Profile string highlighted in Yellow.</li>
+<img src="images/step3.2.png" alt="step2"></div>
+<li>
+<p><b>Step-4 Dump the image file:</b></p>
+<li> Enter the Profile name to run this plugin. Copy the Virtual Offsets of SAM and SYSTEM required for the next step</li>
 
-  <div style="text-align-center;">
- <img src="./images/addproduct.png" alt="conventional databse"></div>
-  Click the buy button where the user can select product and  proceed to purchase products 
-<div style="text-align-center;">
- <img src="./images/full.png" alt="conventional databse"></div>
-   
-  Successfull transaction end with generating a reciept 
-<div style="text-align-center;">
- <img src="./images/receipt.png" alt="conventional databse"></div>
-   Click  the transaction history link provided with reciept  which will show two options to  view data 
-<div style="text-align-center;">
- <img src="./images/button.png" alt="conventional databse"></div>
+<img src="images/step3.3.png" alt="step2"></div>
+<p><b>Step-5 : View the image file:</b></p>
+<li>Paste the SAM and SYSTEM hive offsets in the box.</li>
+<img src="images/step4.png" alt="step2"></div>
+<li>The SAM and SYSTEM hive offsets are used as input in this step to run hashdump plugin which will print the password hashes. Copy the resulting hashes for the final step.</li>
+<img src="images/step5.png" alt="step2"></div>
+<p><b>Paste the hash to crack the password.</b></p>
+<img src="images/step6.png" alt="step2"></div>
+<p><b>Cracked Password</b></p>
+<img src="images/step7.png" alt="step2"></div>
 
-Clicking on conventional database will allow the user to view a table populated with data .
 
-<div style="text-align-center;">
- <img src="./images/table.png" alt="conventional databse"></div>
-
-Clicking on blockchain database will allow the user to view how data is stored in blockchain database
-
-<div style="text-align-center;">
- <img src="./images/block.png" alt="conventional databse"></div>
