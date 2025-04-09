@@ -1,3 +1,3 @@
-<u><h3>Aim of the experiment</h3></u>
+<h3>Aim of the Experiment</h3>
 
- <p>This experiment's goal is to introduce students to memory forensics by analyzing memory images through use cases commonly seen in the real world.</p> .
+<p>The goal of this experiment is to introduce the concept of memory forensics by analyzing memory images through practical use cases commonly encountered in real-world scenarios.</p>

@@ -1,1 +1,1 @@
- <h2>Retrieving password hashes and dumping cached 	files from memory dumps.</h2>
+<h2>Retrieving Password Hashes and Dumping Cached Files from Memory Dumps</h2>
