@@ -6,30 +6,78 @@
       "answers": {
         "a": "A table with mapping of addresses and human readable names",
         "b": "A table with mapping of a JPG image file location address in the disk to memory address",
-        "c": "A table with mapping of MAC and it’s corresponding IP address"
+        "c": "A table with mapping of MAC and its corresponding IP address"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Correct. Symbol tables map memory addresses to function or variable names for easier analysis. <a href='www.google.com'>More info</a>",
+        "b": "Incorrect. This does not describe a symbol table.",
+        "c": "Incorrect. That describes an ARP table, not a symbol table."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "Is it possible to extract every files present on a file system from a memory dump?",
+      "question": "Is it possible to extract every file present on a file system from a memory dump?",
       "answers": {
         "a": "yes",
         "b": "no"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. Memory dumps only contain active memory content, not the full file system. <a href='www.google.com'>Learn more</a>",
+        "b": "Correct. Only memory-resident data can be extracted from memory dumps."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What type of files are typically recovered during memory forensics?",
+      "answers": {
+        "a": "All deleted files from the hard disk",
+        "b": "Files that were actively loaded into memory",
+        "c": "Only system files",
+        "d": "Only executable files"
+      },
+      "explanations": {
+        "a": "Deleted files from the disk are not guaranteed to be in memory.",
+        "b": "Correct. Memory forensics helps recover files that were actively in memory at the time of the dump.",
+        "c": "Not just system files—any file in memory can be recovered.",
+        "d": "Executable files can be recovered, but not exclusively."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which tool is commonly used to analyze memory dumps?",
+      "answers": {
+        "a": "Wireshark",
+        "b": "Volatility",
+        "c": "Nmap",
+        "d": "Netcat"
+      },
+      "explanations": {
+        "a": "Wireshark is used for network packet analysis.",
+        "b": "Correct. Volatility is widely used for memory forensics.",
+        "c": "Nmap is used for network scanning.",
+        "d": "Netcat is used for network communication and debugging."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why might cached files appear in memory dumps?",
+      "answers": {
+        "a": "Because they are permanently stored in RAM",
+        "b": "Because they were recently accessed and kept in memory for performance",
+        "c": "Because the operating system saves them in memory forever",
+        "d": "Because the user copied them manually into RAM"
+      },
+      "explanations": {
+        "a": "Incorrect. RAM is volatile and only keeps active data temporarily.",
+        "b": "Correct. Frequently accessed files may be cached in memory to improve performance.",
+        "c": "Incorrect. Files are not stored forever in memory.",
+        "d": "Incorrect. Users do not copy files manually to RAM."
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
