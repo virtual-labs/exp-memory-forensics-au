@@ -1,4 +1,4 @@
-<h3>Aim of the Experiment</h3>
+<h3>Aim of the experiment</h3>
 The aim of this experiment is to explore memory forensics by analyzing memory dumps to extract critical data such as usernames, password hashes, and cached files. It focuses on the volatile nature of RAM and demonstrates how live memory analysis can reveal sensitive information valuable for forensic investigations.
 
 <h3>Applications</h3>
