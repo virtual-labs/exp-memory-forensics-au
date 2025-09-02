@@ -9,7 +9,7 @@
         "c": "A table with mapping of MAC and its corresponding IP address"
       },
       "explanations": {
-        "a": "Correct. Symbol tables map memory addresses to function or variable names for easier analysis. <a href='www.google.com'>More info</a>",
+        "a": "Correct. Symbol tables map memory addresses to function or variable names for easier analysis.",
         "b": "Incorrect. This does not describe a symbol table.",
         "c": "Incorrect. That describes an ARP table, not a symbol table."
       },
@@ -23,7 +23,7 @@
         "b": "no"
       },
       "explanations": {
-        "a": "Incorrect. Memory dumps only contain active memory content, not the full file system. <a href='www.google.com'>Learn more</a>",
+        "a": "Incorrect. Memory dumps only contain active memory content, not the full file system.",
         "b": "Correct. Only memory-resident data can be extracted from memory dumps."
       },
       "correctAnswer": "b",
@@ -79,6 +79,57 @@
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
+    },
+    {
+      "question": "Which memory region typically stores process-related data like stack, heap, and code segments?",
+      "answers": {
+        "a": "Kernel memory",
+        "b": "User space memory",
+        "c": "Virtual address space",
+        "d": "Disk cache"
+      },
+      "explanations": {
+        "a": "Kernel memory stores system-level structures, not user process data.",
+        "b": "Correct. User space memory holds process-related information including stack, heap, and code segments.",
+        "c": "Virtual address space is a broader term; not specific to process data.",
+        "d": "Disk cache is unrelated to process memory regions."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "In memory forensics, what is the purpose of extracting process lists?",
+      "answers": {
+        "a": "To analyze active and terminated processes during the memory snapshot",
+        "b": "To recover deleted files from disk",
+        "c": "To scan for network packets",
+        "d": "To analyze GPU performance"
+      },
+      "explanations": {
+        "a": "Correct. Process lists help investigators analyze active, hidden, and terminated processes from the memory dump.",
+        "b": "Incorrect. File recovery is a different process.",
+        "c": "Network packet analysis is unrelated here.",
+        "d": "GPU performance is irrelevant to memory dumps."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which command in Volatility is commonly used to list running processes?",
+      "answers": {
+        "a": "pslist",
+        "b": "dlllist",
+        "c": "memdump",
+        "d": "netscan"
+      },
+      "explanations": {
+        "a": "Correct. The 'pslist' command in Volatility lists the running processes in the memory dump.",
+        "b": "'dlllist' shows DLLs loaded by a process.",
+        "c": "'memdump' extracts process memory, not list processes.",
+        "d": "'netscan' scans for network connections."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
     }
   ]
 }
