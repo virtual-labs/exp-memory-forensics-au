@@ -3,7 +3,7 @@
 | <b>Discipline  | <b>Computer Science and Engineering      |
 | :------------- | :--------------------------------------- |
 | <b> Lab        | <b> Computer Forensics           |
-| <b> Experiment | <b> File Signature Analysis and File Carving Techniques |
+| <b> Experiment | <b> Retrieving Password Hashes and Dumping Cached Files from Memory Dumps |
 
 ### About the Experiment
 
