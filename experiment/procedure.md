@@ -1,4 +1,4 @@
-<h3> Procedure</h3>
+
 
 <p><b>Step-1 Create a memory dump file :</b></p>
 <li>Click the “MemoryDump tool” button to generate a memorydump file.Copy the filename for Step 3.</li>
