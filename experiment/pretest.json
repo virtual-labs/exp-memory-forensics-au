@@ -2,37 +2,89 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is a Volatility Framework? It is a ?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "aFile system analysis tool",
+        "b": "Memory analysis too",
+        "c": "Network analysis tool"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. Volatility is not for file system analysis.",
+        "b": "Correct. Volatility is a memory analysis tool. <a href='https://www.volatilityfoundation.org/'>Learn more</a>",
+        "c": "Incorrect. Volatility is not used for network analysis."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Is there a possibility to extract files from RAM?",
+      "answers": {
+        "a": "yes",
+        "b": "no"
+      },
+      "explanations": {
+        "a": "Correct. Files that were loaded in memory can sometimes be recovered from RAM dumps.",
+        "b": "Incorrect. RAM may temporarily store files being accessed or executed."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Do you know if Windows registry caches the hashed passwords in its hives?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "yes",
+        "b": "no"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Correct. Windows registry hives such as SAM may store hashed credentials.",
+        "b": "Incorrect. The registry can contain cached credentials in hashed form."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is typically stored in RAM during system operation?",
+      "answers": {
+        "a": "Files currently being used",
+        "b": "Only images",
+        "c": "Only boot files"
+      },
+      "explanations": {
+        "a": "Correct. RAM stores active processes, files, and system data.",
+        "b": "Incorrect. RAM stores much more than just images.",
+        "c": "Incorrect. RAM is not limited to boot files."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is a memory dump?",
+      "answers": {
+        "a": "A backup of a hard drive",
+        "b": "A copy of data stored in RAM",
+        "c": "An image file used for booting"
+      },
+      "explanations": {
+        "a": "Incorrect. A memory dump captures data from RAM, not the hard drive.",
+        "b": "Correct. A memory dump is a snapshot of system RAM.",
+        "c": "Incorrect. Boot images are not memory dumps."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following is a common use of memory forensics?",
+      "answers": {
+        "a": "Creating music files",
+        "b": "Recovering active session data",
+        "c": "Designing websites"
+      },
+      "explanations": {
+        "a": "Incorrect. Memory forensics has nothing to do with media creation.",
+        "b": "Correct. Analysts use memory forensics to recover data from active sessions or running processes.",
+        "c": "Incorrect. Website design is unrelated to memory analysis."
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
